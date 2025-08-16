@@ -1,18 +1,22 @@
-export type User ={
-    id:string;
+export type User = {
+    id: string;
     displayName: string;
     email: string;
     token: string;
-    imageUrl? : string;
+    imageUrl?: string;
 }
 
-export type LoginCreds={
+export type LoginCreds = {
     email: string;
     password: string;
 }
 
-export type RegisterCreds={
+export type RegisterCreds = {
     email: string;
-    password: string;
     displayName: string;
+    password: string;
+    gender: string;
+    dateOfBirth: string;
+    city: string;
+    country: string;
 }
